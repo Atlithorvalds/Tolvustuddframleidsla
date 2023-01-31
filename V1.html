@@ -51,44 +51,116 @@
 
 								<h3>Undirbúningsvinna og kynning á Brackets</h3>
 								<p></p>
-                                Það fyrsta sem ég gerði var að lesa vinnulýsinguna á <a href="https://haskoliislands.instructure.com/courses/24153/assignments/88375">Canvas</a>. Eftir það fór ég að hugsa um það hvernig ég ætlaði mér að hanna og setja upp vefsíðuna. Ég byrjaði því á að horfa á fyrsta <a href="https://www.youtube.com/watch?v=JfDa07tpTJo&list=PLGuNTpc293hpIpAVSJ3-SgNolCTa1BfJE&index=2">kennslumyndbandið</a>. Þegar ég var búinn að horfa á öll fjögur kennslumyndböndin, á fann ég aftur vinnulýsinguna og byrjaði að ná í öll forritin sem ég þurfti Brackets og GitHub. Ég hafði nú þegar kynnst aðeins notkun á HTML í öðru en Brackets en ákvað að nota það sem kennarinn mældi með. Kennarinn nefndi meðal annars að kostir við Brackets væru svokallaður "Live" eiginleiki og eins "Git integration". Ég setti forritin upp og byrjaði að vinna með þau og reyna að læra alla helstu kosti og galla þeirra. Ég fór að skoða vefsíðusniðmát og valdi <a href="https://html5up.net/spectral"> Spectral</a> frá <a href="https://html5up.net/">Html5Up</a>. Næst var að kynnast Brackets betur og að byrja að setja vefsíðuna upp, með það markmið að hún henti sem vinnubók áfangans.
+                                Fyrsta verkefni annarinnar var að búa til vel skipulagða vefsíðu sem heldur utan um öll verkefnin sem verða unnin í áfanganum VÉL608G.
+                                Það fyrsta sem ég gerði var að lesa vinnulýsinguna á <a href="https://haskoliislands.instructure.com/courses/24153/assignments/88375">Canvas</a>. Eftir það fór ég að hugsa um það hvernig ég ætlaði mér að hanna og setja upp vefsíðuna. Ég byrjaði því á að horfa á fyrsta <a href="https://www.youtube.com/watch?v=JfDa07tpTJo&list=PLGuNTpc293hpIpAVSJ3-SgNolCTa1BfJE&index=2">kennslumyndbandið</a>. Þegar ég var búinn að horfa á öll fjögur kennslumyndböndin, á fann ég aftur vinnulýsinguna og byrjaði að ná í öll forritin sem ég þurfti Brackets og GitHub. Ég hafði nú þegar kynnst aðeins notkun á HTML í öðru en Brackets en ákvað að nota það sem kennarinn mældi með. Kennarinn nefndi meðal annars að kostir við Brackets væru svokallaður "Live" eiginleiki og eins "Git integration". Ég setti forritin upp og byrjaði að vinna með þau og reyna að læra alla helstu kosti og galla þeirra. Ég fór að skoða vefsíðusniðmát og valdi <a href="https://html5up.net/spectral"> Spectral</a> frá <a href="https://html5up.net/">Html5Up</a>. Næst var að kynnast Brackets betur og að byrja að setja vefsíðuna upp, með það markmið að hún henti sem vinnubók áfangans og í framhaldinu portfolio.
 								<p></p>
 
 								<hr />
 
-								<h4>Uppsetning á GitHub</h4>
+								<h4>Uppsetning á GitHub og að koma síðunni inn á netið</h4>
 								<p></p>
-
-								<p></p>
-
+                                Þegar að vefsíðan var að verða tilbúin var næsta skref að hlaða henni upp í <a href="https://github.com">Github</a>. Þar sem ég var ekki með aðgang að Github byrjaði ég á því að búa mér til aðgang. Þar á eftir horfði ég á <a href="https://www.youtube.com/watch?v=L_oa7XToChU&list=PLU4NWxEpJJumoJghcC5V3rjv0_VHE7IQr&index=3">GITHUB myndband1</a> á Youtube og fór eftir þeim leiðbeiningum sem komu fram í myndbandinu en ég mun fara yfir það sem ég gerði í nokkrum skrefum.
                                 
-                                <h4>AÐLÖGUN VEFSÍÐU AÐ MÍNUM ÞÖRFUM</h4>
-								<p></p>
+                                <p></p>
+                                <ol>
+                                <li>Ég byrjaði á að setja upp GitHub og fara inn á Github aðganginn minn. Þar setti ég upp <strong>New repository</strong> á <a href="https://github.com/atlithorvalds/TolvustuddFramleidsla">Github síðunni minni</a> undir nafninu Tolvustuddframleidsla. Þann hnapp má finna undir plúsinum í hægra horninu á Github síðunni. <br />
+                                    
+                                <img src="images/vefsida1.jpg.png" style="width: 40%; height: auto"></li>
+                                
+                                    <p></p>
+                                <li>Næst þarf að fylla inn í gluggann <strong>Repository name</strong> og passa að það sé hakað í <strong>Public</strong> hnappinn en það er svo að aðrir geti séð vefsíðuna. Þegar þetta er komið er ýtt á hnappinn <strong>Create repository</strong>. <br />
+                                    
+                                    <img src="images/vefsida2.png" style="width: 70%; height: auto">
+                                    
+                                    </li> 
+                                    <p></p>
+                                <li>Næst þarf að hægri-smella á möppuna sem vefsíðan okkar er geymd í og það þarf að velja <strong>New terminal at folder</strong> og þá opnast terminal gluggi. Við förum þá aftur inn á Github og við þurfum að afrita textann á síðunni sem opnaðist inn á terminal gluggann. <br />
+                                    
+                                    <img src="images/vefsida3.png" style="width: 70%; height: auto">
+                                    
+                                <p></p>
+                                    
+                                Ég reyndi að nota eftirfarandi skipanir í Git Bash:</p>
 
+								<pre><code>echo "Tolvustuddframleidsla" >> README.md
+git init
+git add README.md 
+git commit -m "first commit"
+git branch -N main
+git remote add origin https://github.com/Atlithorvalds/Tolvustuddframleidsla.git
+git push -u origin main
+</code></pre>
 								<p></p>
                                 
                                 
-                                <h4>BREYTTAR ÁHERSLUR VEFSÍÐUNNAR</h4>
-								<p></p>
 
+								<p>Þetta gekk ekki vandræðalaust fyrir sig og fékk ég villukóðann:</p>
+								<pre><code>error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Atlithorvalds/Tolvustuddframleidsla.git'</code></pre>
+								<p>Eftir goggle leit þá fann ég á <a href="https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git">Stack Overflow</a> lausn frá <a href="https://stackoverflow.com/users/330457/jin-kwon">Jin Kwon</a>. Hún er eftirfarandi tvær skipanir:</p>
+								<pre><code>git commit -m 'fixes' --allow-empty
+git push</code></pre>
+                                
+                              Eftir það þurfti ég að setja allar skipanirnar aftur inn:
+                                <pre><code>echo "Tolvustuddframleidsla" >> README.md
+git init
+git add README.md 
+git commit -m "first commit"
+git branch -N main
+git remote add origin https://github.com/Atlithorvalds/Tolvustuddframleidsla.git
+git push -u origin main
+</code></pre>
+                                
+                                    <br />
+                                Þegar búið er að afrita kóðann inn á terminal gluggann og ýta svo á enter. Ef allt gengur upp, þá þarf að skrá notendanafn og lykilorð (Token) inn. Þar lenti ég í vandræðum þar því ég var ekki búinn að kynna mér og búa mér til Token. Ég fann út úr því með því að fara eftir leiðbeiningum sem ég fann á <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">þessari</a> síðu.
+                                Þetta er villan sem ég fékk þar sem ég var ekki með Token:
+                                <p></p>
+                                <img src="images/vefsida5.png" style="width: 70%; height: auto">
+                                    </li>
+                            
+                                
+                            <p></p>
+                                <li> Nú ættu allar skrár að vera komnar inn á Github síðuna og ætti vefsíðan þá að líta svona út. <br /> 
+                                    <img src="images/vefsida6.png" style="width: 70%; height: auto">
+                                    <br />
+                                    <p></p>
+                                Þá förum við í settings í hægra horninu og þar förum við í <strong>GitHub pages</strong>. 
+                                Þar breytum við <strong>None</strong> í <strong>Main</strong> og vistum breytingarnar og þá ætti vefsíðan að líta svona út:
+                                    
+                                    <img src="images/vefsida7.png" style="width: 70%; height: auto">
+                                <br />
+                                    Nú er hægt að nota þennan link sem birtist til þess að deila síðunni með öðrum.
+                                    
+                                    </li>
+                                <p></p>
+                            </span><span>Enn var hægt að gera breytingar á þessari síðu og var það fremur einfalt. Allt sem þurfti að gera var að opna aftur <strong>New terminal at folder</strong> og líma skipunina: 'git add . ; git commit -m"BreytingNr"; git push'.</span></p>
+                                
+                                
+                              
+                           
+								<hr />
+                                
+                                <h4>Að AÐLÖGA VEFSÍÐUNA AÐ MÍNUM ÞÖRFUM og Þörfum námskeiðsins</h4>
+								<p></p>
+                                Ég vildi hafa vefsíðuna á ákveðinn hátt og því þurfti ég að skipuleggja mig svolítið. Ég þurfti að hugsa um sniðmát, textastærð, litaval, ofl. Þegar ég var búinn að ákveða var þetta einfaldlega gert með því að prufa sig áfram í kóðanum. Sumt var lítið mál eins og að breyta litnum á bakrunni. Það var gert með því að velja í kóða: "wrapper style4" í stað "wrapper style5" sem dæmi. Eins notaði ég mér það að ég var með tilbúna síðu í höndunum og gat því einfaldlega breytt kóðanum og ef það klikkaði eða mér leist ekki á breytingarnar þá einfaldlega breytti ég því til baka. Svo það var voða lítið mál að læra á hvað gerði hvað. Til dæmis hvernig maður átti að gera bil og/eða línu sem skiptir texta. Það er allt voða einfalt þú notar það sem þú sérð í kóðanum og afritar það á þann stað sem hentar. Hlutir eins og að stækka og minnka mynd gerði ég með því að stækka eða minnka hana í Preview, sem er forrit í tölvunni ferð bara í Adjust size og lagar hana til þangað til hún kemur vel út. Þetta lýsir nokkuð vel hvernig ég lagaði til allt á vefsíðunni. Ég prufaði mig bara áfram og lærði hægt og rólega hvernig kóðin virkaði. Þar aðleiðandi notaði ég ekki mikið af síðum til að finna upplýsingar. Það er hins vegar eitthvað sem ég mun eflaust gera þegar ég fer í að bæta vefsíðuna enn frekar.
 								<p></p>
                                 
+                            <hr />
                                 
                                 <h4>FERILSKRÁ</h4>
 								<p></p>
-
+                                Ég ákvað að hafa ferilskrána sem síðu á vefsíðunni þar sem það var bæði þægilegt og eins einfalt að laga ef einhver villa kom upp í stað þess að hafa hana sem pdf og þurfa þá að setja inn nýtt og nýtt skjal. Gerð ferilskránar var ekki flókin ég einfaldlega tók það helsta úr minni ferilskrá og bætti einu og einu við. Þegar ég var orðinn nokkuð ánægður með hana og útlitið á henni, þá lagaði ég hana aðeins til og sagði það gott. 
 								<p></p>
                                 
-                                 <h4>ENDURBÆTUR OG BREYTT SKIPULAG</h4>
+                
+                <hr />
+                                 <h4>Framtíðar ENDURBÆTUR Á VEFSÍÐU</h4>
 								<p></p>
-
+                                Hér mun ég fara yfir þær breytingar sem munu eiga sér stað á tíma námskeiðsins. Ég mun því mjög líklega breyta einhverju áherslum en byrja á að bæta hverju verkefni fyrir sig inn á vefsíðuna.
 								<p></p>
                                 
                                 
-                                <h4>ENDURBÆTUR OG BREYTT SKIPULAG FYRIR 10 Í EINKUNN</h4>
-								<p></p>
-
-								<p></p>
+    
                                 
 							</div>
 						</section>
